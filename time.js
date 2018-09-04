@@ -27,3 +27,12 @@ function getTimeString(times){
   }
   return str
 }
+
+  function formatDate(date){
+    return date.getFullYear()+'-'
+      + padding(date.getMonth()+1)+'-'
+      + padding(date.getDate())+' '
+      + padding(date.getHours())+':'
+      + padding(date.getMinutes())+':'
+      + padding(date.getSeconds());
+  }
